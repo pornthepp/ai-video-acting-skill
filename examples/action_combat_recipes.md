@@ -86,3 +86,36 @@ Dynamic low-angle tracking shot. A cybernetic soldier charges forward at full sp
 ```text
 Medium shot inside the adjacent room. The soldier slides across the dusty concrete floor on one knee and palm, coming to a halt as drywall dust drifts in the air. He raises his weapon, eyes scanning the room through the dust cloud.
 ```
+
+---
+
+## 5. Desert Ridge Evasion & Rock Impact (Zero-Grappling & Debris Shockwave)
+
+### Shot 1: The Stance & Golden Hour Wind (1.5s) — Setup Beat
+* **Format**: T2V / I2V (Kling, Runway, Seedance 2.5)
+
+```text
+Static 50mm, golden hour desert ridge. A weathered 50s tribal warrior woman lowers her hands from her necklace into a compact combat guard. Her weight loads firmly onto her rear foot, braids swinging gently in the desert wind. Low sun rakes across her copper jewelry and cheekbones.
+```
+
+### Shot 2: The Evasion & Counter Strike (1.0s) — Strike Beat (No-Grappling)
+* **Format**: Seedance 2.5 / Hailuo / Runway
+
+```text
+Fast handheld whip-pan. The woman sidesteps sharply to the right as an opponent's shadow rushes past, and she drives her elbow hard forward into frame. A cloud of fine golden sand kicks up violently from her boots. Motion blur, 45-degree shutter angle.
+```
+
+### Shot 3: The Impact on Rocks (1.2s) — Crash Beat (Isolated Physics)
+* **Format**: Kling / Seedance 2.5 / Sora
+
+```text
+[Crash push in] Low-angle close-up. A raider crashes violently down onto the rocky ledge, dry sand and dust exploding outward in a heavy shockwave around his body. Realistic heavy impact, golden dust catching the backlight.
+```
+
+### Shot 4: The Recovery (2.0s) — Aftermath Beat
+* **Format**: Kling / Runway / Seedance 2.5
+
+```text
+Medium close-up through drifting golden dust. The warrior woman stands grounded on the ridge, chest heaving with deep breaths, hands raised in guard. Her braids settle against her shoulders as she watches off-camera. Dust particles drift in the warm sunset rim light.
+```
+

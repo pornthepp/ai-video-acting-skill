@@ -29,8 +29,11 @@ Eliminates the "Uncanny Valley", rubbery facial overacting, and multi-body comba
 * **Solution**: Direct **Playable Action Verbs** (*To corner*, *To deflect*, *To conceal*, *To shield*) and **Kinematic Micro-acting** (eyeline shifts, breath catches, and jaw releases).
 
 ### 2. Problem 2: Multi-Body Collision & Limb Morphing (Action)
-* **Root Cause**: AI Video models cannot render multi-limb grappling, wrist locks, or multi-beat combos in a single prompt (resulting in 3 arms, morphing bodies, and rubbery floaty physics).
-* **Solution**: The **3-Shot Action Sequence Protocol** (1 Dominant Action per Cut) + **Environmental FX Masking** (rain spray, debris explosion, sparks) to sell kinetic impact while masking contact points.
+* **Root Cause**: AI Video models cannot render continuous joint locks (*"rotates forearm against thumb"*), full-body throws, or disembodied reaching arms (*"an arm reaches in and grabs her"*). These trigger 3 arms, skin fusion, and rubbery ragdoll glitches.
+* **Solution**: **The Zero-Grappling Law** + **Visual Deception & Impact Isolation**:
+  - Direct **Sidesteps & Strikes over Grapples** (elbow drives, palm strikes, push kicks).
+  - **Separate Attacker from Receiver into discrete cuts** (Cut A: Attacker strikes ➔ Cut B: Receiver crashes with sand/dust/rain shockwave).
+  - **Environmental FX as Collision Proxies** (dust bursts, rain spray, sparks) to sell kinetic power and mask AI limb contact points.
 
 ---
 
