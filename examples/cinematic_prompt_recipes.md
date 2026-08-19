@@ -87,3 +87,25 @@ Action beats:
 Camera: Locked 70mm medium close-up, soft dusk backlighting with warm rim along the hair and silhouette.
 Performance: Restrained period-drama naturalism, real-time micro-acting.
 ```
+
+---
+
+## 6. Cyberpunk & Synthetic Restraint
+
+### Scene: The Identity Scan (To conceal / To pass inspection)
+* **Objective / Verb**: To conceal synthetic identity under scrutiny without triggering alarm.
+* **Format**: Seedance 2.5 / Jimeng (T2V / I2V)
+
+```text
+Spatial Anchor: A young synthetic courier stands at a neon-lit security checkpoint, already holding an identity card beneath the red laser scanner, posture calm and upright.
+
+Character Kinematics:
+- Beat 1 (0–1.5s): The scanner beeps an unexpected code. Her thumb pauses against the edge of the card.
+- Beat 2 (1.5–3.5s): Her eyes shift from the scanner beam toward the security guard off-camera right without moving her head. A subtle breath catches; her lower eyelids tighten, then her jaw loosens.
+- Beat 3 (3.5–5.0s): She blinks once, exhales softly through her nose, and returns her gaze down to the scanner plate as her shoulders settle.
+
+Camera Trajectory: 85mm medium close-up, locked composition with a barely perceptible slow push-in.
+Lighting & Atmosphere: Crisp red laser line sweeping across cheekbone, cold cyan overhead LED fill, atmospheric rain reflections.
+Style: Cinematic photorealism, restrained realistic micro-performance, natural muscle dynamics.
+```
+

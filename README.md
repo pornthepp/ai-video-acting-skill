@@ -2,9 +2,9 @@
 
 [![Antigravity Skill](https://img.shields.io/badge/Antigravity-Skill-blue.svg)](https://github.com/pornthepp/ai-video-acting-skill)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![AI Video Models](https://img.shields.io/badge/Supports-Runway%20%7C%20Kling%20%7C%20Sora%20%7C%20Hailuo%20%7C%20Luma-orange.svg)](#supported-video-ai-models)
+[![AI Video Models](https://img.shields.io/badge/Supports-Runway%20%7C%20Kling%20%7C%20Sora%20%7C%20Hailuo%20%7C%20Luma%20%7C%20Seedance%202.5-orange.svg)](#supported-video-ai-models)
 
-An advanced agentic skill designed to direct, refine, and engineer **Oscar-grade, physically realistic cinematic acting performances** in Generative AI Video models (*Runway Gen-3 / Act-One, Kling AI, OpenAI Sora, MiniMax / Hailuo, and Luma Dream Machine*).
+An advanced agentic skill designed to direct, refine, and engineer **Oscar-grade, physically realistic cinematic acting performances** in Generative AI Video models (*Runway Gen-3 / Act-One, Kling AI, OpenAI Sora, MiniMax / Hailuo, Luma Dream Machine, and ByteDance Seedance 2.5 / Jimeng*).
 
 Eliminates the "Uncanny Valley" and cartoonish overacting by replacing vague emotional adjectives with **Playable Action Verbs**, **FACS-based Micro-expressions**, **Gaze & Respiratory Dynamics**, and **Kinematic Prompt Grammar**.
 
@@ -116,6 +116,7 @@ $$\text{ESTABLISH / HOLD (0–1.5s)} \longrightarrow \text{MICRO-LEAK (1.5–3.5
 | **OpenAI Sora** | Storyboard beats + Count | `1 Subject Action + 1 Camera Move` in sequential count beats. |
 | **MiniMax / Hailuo** | Explicit bracket tags | Use `[Static shot]` / `[Push in]` with literal kinematic phrasing. |
 | **Luma Dream Machine** | Separate subject kinematics from camera language | Natural subject movement descriptions; explicit camera movement commands. |
+| **Seedance 2.5 (ByteDance / Jimeng)** | `Subject Anchor + Kinematic Beats + Camera Trajectory + Lighting Details` | Excels at high aesthetic facial continuity and prompt adhesion. Use explicit spatial anchors, subtle gaze tracking cues, and clear camera trajectory (`slow push-in 85mm`, `locked close-up`). |
 
 ---
 

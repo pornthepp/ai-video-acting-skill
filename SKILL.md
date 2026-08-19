@@ -1,6 +1,6 @@
 ---
 name: ai-video-acting-director
-description: Directs, designs, and refines highly realistic, subtle cinematic acting performances for AI Video models (Runway, Kling, Sora, Hailuo/MiniMax, Luma). Uses Playable Action Verbs (Judith Weston), Subtext/Beats (Stanislavski/Meisner), Micro-expressions (FACS/Laban), and Kinematic Prompt Syntax to eliminate uncanny/exaggerated acting.
+description: Directs, designs, and refines highly realistic, subtle cinematic acting performances for AI Video models (Runway, Kling, Sora, Hailuo/MiniMax, Luma, Seedance 2.5). Uses Playable Action Verbs (Judith Weston), Subtext/Beats (Stanislavski/Meisner), Micro-expressions (FACS/Laban), and Kinematic Prompt Syntax to eliminate uncanny/exaggerated acting.
 ---
 
 # AI Video Acting Director Skill
@@ -110,6 +110,7 @@ On [breath cue], [1–2 localized facial movements], followed by [jaw release / 
 | **OpenAI Sora** | Storyboard-like beats + Count | `1 Subject Action + 1 Camera Move`. Specify actions in sequential bullet beats. |
 | **MiniMax / Hailuo** | Explicit bracket tags | Use `[Static shot]` or `[Push in]`. Set `prompt_optimizer=false` via API to preserve precise kinematic phrasing. |
 | **Luma Dream Machine** | Separate subject kinematics from camera language | Natural kinematic descriptions for subject; direct camera commands (e.g., `camera slowly pushes in`). |
+| **Seedance 2.5 (ByteDance / Jimeng)** | `Subject Anchor + Kinematic Beats + Camera Trajectory + Lighting Details` | Excels at high aesthetic facial continuity and prompt adhesion. Use explicit spatial anchors, subtle gaze tracking cues, and clear camera trajectory (`slow push-in 85mm`, `locked close-up`). |
 
 ---
 
