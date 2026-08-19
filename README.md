@@ -28,12 +28,13 @@ Eliminates the "Uncanny Valley", rubbery facial overacting, and multi-body comba
 * **Root Cause**: Generative models fail when prompted with abstract psychological labels (*"heartbroken"*, *"deeply sad"*, *"intensely angry"*).
 * **Solution**: Direct **Playable Action Verbs** (*To corner*, *To deflect*, *To conceal*, *To shield*) and **Kinematic Micro-acting** (eyeline shifts, breath catches, and jaw releases).
 
-### 2. Problem 2: Multi-Body Collision & Limb Morphing (Action)
-* **Root Cause**: AI Video models cannot render continuous joint locks (*"rotates forearm against thumb"*), full-body throws, or disembodied reaching arms (*"an arm reaches in and grabs her"*). These trigger 3 arms, skin fusion, and rubbery ragdoll glitches.
-* **Solution**: **The Zero-Grappling Law** + **Visual Deception & Impact Isolation**:
+### 2. Problem 2: Multi-Body Collision & Continuous Stunt Glitches (Action)
+* **Root Cause**: AI Video models cannot calculate continuous multi-stage combat physics across long takes (>2s) or complex joint locks (*"rotates forearm against thumb"*). Prompting single 8s combat takes causes hoverboard sliding, limb morphing, and rubbery ragdoll glitches.
+* **Solution**: **Action Duration Hard Cap (1.0s–1.8s)** + **The Zero-Grappling Law** + **Visual Deception**:
+  - **Decompose 5s–8s Action into 3–4 short cuts** (1.0s–1.8s each).
   - Direct **Sidesteps & Strikes over Grapples** (elbow drives, palm strikes, push kicks).
-  - **Separate Attacker from Receiver into discrete cuts** (Cut A: Attacker strikes ➔ Cut B: Receiver crashes with sand/dust/rain shockwave).
-  - **Environmental FX as Collision Proxies** (dust bursts, rain spray, sparks) to sell kinetic power and mask AI limb contact points.
+  - **Single-Subject Cut Isolation** (Cut A: Attacker strikes ➔ Cut B: Receiver crashes with sand/dust/rain shockwave).
+  - **Environmental FX as Collision Proxies** (dust bursts, rain spray, sparks) to sell kinetic power and mask AI contact points.
 
 ---
 

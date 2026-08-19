@@ -1,6 +1,6 @@
 ---
 name: ai-video-acting-director
-description: Directs, designs, and refines highly realistic cinematic acting performances and Hollywood/HK-grade action fight sequences for AI Video models (Runway, Kling, Sora, Hailuo/MiniMax, Luma, Seedance 2.5). Enforces Playable Action Verbs, Subtext/Beats, FACS Micro-expressions, Action Shot Decomposition (1 Action per Shot), The Zero-Grappling Rule, and Environmental FX Masking to eliminate uncanny acting and multi-body combat morphing.
+description: Directs, designs, and refines highly realistic cinematic acting performances and Hollywood/HK-grade action fight sequences for AI Video models (Runway, Kling, Sora, Hailuo/MiniMax, Luma, Seedance 2.5). Enforces Playable Action Verbs, Subtext/Beats, FACS Micro-expressions, Action Shot Decomposition (1.0s–1.8s cuts), The Zero-Grappling Law, and Environmental FX Masking to eliminate uncanny acting and multi-body combat morphing.
 ---
 
 # AI Video Acting & Action Director Skill 🎬💥
@@ -9,17 +9,19 @@ This skill transforms abstract video prompts into **physically playable, Oscar-g
 
 ---
 
-## 1. Dual Directing Modes
+## 1. Dual Directing Modes & Duration Limits
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────┐
 │                   AI VIDEO CINEMATIC DIRECTING ENGINE                    │
 ├──────────────────────────────────────────┬───────────────────────────────┤
 │ MODE A: ACTING & DRAMATIC PERFORMANCE    │ MODE B: ACTION & COMBAT STUNT │
-│  - Playable Action Verbs (Weston)        │  - Action Shot Decomposition  │
-│  - The Moment Before & Subtext           │  - 1 Action per Shot Rule     │
-│  - FACS Micro-Cues (1-2 Features Max)    │  - The Zero-Grappling Rule    │
-│  - Temporal Beat: Hold ➔ Leak ➔ Settle   │  - Environmental FX Masking   │
+├──────────────────────────────────────────┼───────────────────────────────┤
+│ • Shot Duration: 3.0s – 8.0s Continuous  │ • Shot Duration: 1.0s – 1.8s  │
+│ • Baseline: Anchored Stillness           │ • Rule: NEVER continuous >2s  │
+│ • Playable Action Verbs (Judith Weston)  │ • Zero-Grappling & No-Locks   │
+│ • FACS Micro-Cues (1-2 Features Max)     │ • Single-Subject Cut Isolation│
+│ • Temporal Beat: Hold ➔ Leak ➔ Settle    │ • Environmental FX Masking    │
 └──────────────────────────────────────────┴───────────────────────────────┘
 ```
 
@@ -33,7 +35,7 @@ This skill transforms abstract video prompts into **physically playable, Oscar-g
 * ✅ **Micro-Acting Hierarchy**:
   $$\text{SPATIAL ANCHOR} \longrightarrow \text{PRIMARY ACTION} \longrightarrow \text{EYELINE} \longrightarrow \text{1–2 FACE CUES} \longrightarrow \text{BREATH} \longrightarrow \text{RECOVERY/STILLNESS}$$
 
-### Drama Master Template (T2V)
+### Drama Master Template (T2V / I2V) — [3.0s to 8.0s Continuous]
 ```text
 [Character archetype], already [visible physical precondition] at/in [spatial anchor].
 
@@ -53,14 +55,18 @@ Restrained natural performance, low-amplitude real-time movement.
 
 ## 3. Mode B: Cinematic Action & Combat Choreography
 
-### 🚫 The "Zero-Grappling & No-Limb-Entanglement" Law
-Diffusion video models lack rigid-body/skeletal physics engines and **fail catastrophically on continuous joint locks, multi-limb grappling, or disembodied grabs**.
+### 🚫 The "Action Duration Limit" & "Zero-Grappling" Laws
 
-#### ❌ STRICTLY BANNED IN T2V/I2V PROMPTS:
-1. **No Joint Locks / Leverages**: Never prompt *“rotates forearm against thumb”*, *“wrist lock”*, *“armbar”*, or *“finger lock”*.
-2. **No Continuous Multi-Body Throws**: Never prompt *“catches his arm and throws him over her hip in one continuous motion”*.
-3. **No Disembodied Reaching Limbs**: Never prompt *“an arm enters frame from the left and grabs her wrist”* (causes ghost limbs and skin fusion).
-4. **No Prolonged Wrestling/Grappling**: Never prompt 2 characters with continuous skin-to-skin contact across multiple seconds.
+#### 1. The Hard Duration Cap (1.0s – 1.8s Max per Cut)
+* **NEVER output single continuous action takes > 2.0 seconds** (e.g. 5s or 8s continuous combat prompts). Long single-takes cause AI models to float, hoverboard-slide, or morph.
+* If a user requests a *"5-second"* or *"8-second"* action scene, you **MUST automatically decompose it into a sequence of 3 to 4 short cuts** (e.g., Cut 1 [1.5s] ➔ Cut 2 [1.0s] ➔ Cut 3 [1.2s] ➔ Cut 4 [1.5s]).
+
+#### 2. The Zero-Grappling & No-Joint-Locks Law
+* ❌ **STRICTLY BANNED**:
+  - Wrist locks, armbars, rotational leverages (*"rotates forearm against thumb"*).
+  - Multi-person continuous throws (*"catches his arm and throws him over hip"*).
+  - Disembodied reaching arms (*"an arm enters frame from left and grabs her"*).
+  - Prolonged multi-body wrestling on the ground.
 
 ---
 
@@ -69,10 +75,10 @@ Diffusion video models lack rigid-body/skeletal physics engines and **fail catas
 #### Rule 1: Strike & Evade over Grapple (หลบและกระแทก แทนการจับล็อก)
 * Direct **sharp sidesteps, ducking, elbow drives, palm strikes, and push-kicks** instead of grabbing wrists or throwing over shoulders.
 
-#### Rule 2: Visual Deception & Impact Isolation (แยกช็อตคนตี vs คนโดน)
-Instead of showing A holding and throwing B in one frame:
+#### Rule 2: Single-Subject Motion Isolation (แยกช็อต 1 คัท = 1 ตัวแสดงหลัก)
+Instead of forcing the AI to calculate 2 entangled moving bodies:
 * **Cut A (Attacker Focus)**: Character A sidesteps sharply and drives an elbow/shoulder forward into empty space/camera.
-* **Cut B (Receiver & Impact Focus)**: Character B crashes violently onto the floor/rocks/wall in an isolated physics reaction.
+* **Cut B (Receiver & Impact Focus)**: Character B crashes violently onto the floor/rocks/wall in an isolated single-body physics reaction.
 
 #### Rule 3: Environmental FX as Collision Proxies (ใช้ Effect สิ่งแวดล้อมพรางจุดสัมผัส)
 Every impact MUST trigger an environmental explosion (**sand/dust cloud, rain spray burst, shattering glass, flying sparks, plaster debris**) at the point of impact. This masks AI limb contact flaws and magnifies perceived kinetic force.
@@ -82,7 +88,7 @@ Use **fast whip-pans, crash zooms, 45-degree narrow shutter angle look, and trac
 
 ---
 
-### Combat Master 3-Shot Sequence Protocol
+### Combat Master 4-Shot Sequence Protocol (Total: ~5s–8s Scene)
 
 ```text
 [SHOT 1 — SETUP & TENSION — 1.5s]
@@ -104,11 +110,11 @@ Use **fast whip-pans, crash zooms, 45-degree narrow shutter angle look, and trac
 
 | Model | Drama / Acting Strategy | Action / Combat Strategy |
 | :--- | :--- | :--- |
-| **Kling AI (1.5 / 2.0 / 3.0)** | `Subject + Movement + Scene + Camera + Lighting` (1–2 face cues) | Isolate striker from receiver; use Motion Brush for single trajectories; 1 strike per clip. |
-| **Runway (Gen-4.5 / Gen-3)** | Positive kinematic phrasing, no negative commands | Use `45-degree shutter angle`, environmental FX bursts, locked impacts. |
-| **OpenAI Sora** | Storyboard beats + Count | `1 Subject Action + 1 Camera Move` in sequential count beats. |
+| **Kling AI (1.5 / 2.0 / 3.0)** | `Subject + Movement + Scene + Camera + Lighting` (1–2 face cues) | Isolate striker from receiver; 1.0s–1.5s single action cuts. |
+| **Runway (Gen-4.5 / Gen-3)** | Positive kinematic phrasing, no negative commands | Use `45-degree shutter angle`, environmental FX bursts, 1.2s impact cuts. |
+| **OpenAI Sora** | Storyboard beats + Count | `1 Subject Action + 1 Camera Move` in sequential 1.5s cuts. |
 | **MiniMax / Hailuo** | Explicit `[Static shot]` / `[Push in]` | `[Push in]` or `[Crash zoom]` with explicit momentum and debris triggers. |
-| **Seedance 2.5 (Jimeng)** | `Spatial Anchor + 3-Stage Beats + Camera Trajectory` | Timestamp-level beat structuring (0-1.5s stance, 1.5-3.5s collision, 3.5-5.0s recoil). |
+| **Seedance 2.5 (Jimeng)** | `Spatial Anchor + 3-Stage Beats + Camera Trajectory` | Timestamp-level beat structuring in short 1.5s cuts. |
 | **Luma Dream Machine** | Separate subject kinematics from camera language | Explicit camera commands (e.g., `camera whip-pans right following impact`). |
 
 ---
@@ -117,6 +123,7 @@ Use **fast whip-pans, crash zooms, 45-degree narrow shutter angle look, and trac
 
 | ❌ Broken / Floaty Prompt | ⚠️ Why it Fails in AI | ✅ Grounded Production Rewrite |
 | :--- | :--- | :--- |
+| `Single 8s continuous action take where girl dodges, catches arm, and throws raider.` | Diffusion models cannot sustain continuous multi-stage combat; causes hoverboard sliding and rubbery ragdoll glitches. | **Decompose into 4 discrete cuts (1.0s–1.5s each):** (1) Stance $\rightarrow$ (2) Evasion & elbow strike $\rightarrow$ (3) Raider crashes on rocks with dust shockwave $\rightarrow$ (4) Standoff. |
 | `A raider's arm enters frame and grabs her forearm.` | Causes disembodied ghost limbs and morphing skin fusion. | `The woman sidesteps sharply to the right as an opponent's shadow rushes past, driving her elbow forward.` |
 | `She rotates forearm against his thumb and throws him over her hip.` | Diffusion models have no IK/joint physics; causes 360° arm twist and floaty ragdoll. | **Decompose into 2 cuts:** (1) Her explosive sidestep & strike $\rightarrow$ (2) Opponent crashing onto rocks with sand explosion. |
 | `Two martial artists grapple and wrestle on the floor.` | Multi-body entanglement collapses into a single morphing mass. | Use striking & distance: *Push-kick $\rightarrow$ Opponent crashes through wooden table.* |
@@ -135,4 +142,4 @@ Use **fast whip-pans, crash zooms, 45-degree narrow shutter angle look, and trac
   * [`references/action_shot_decomposition.md`](references/action_shot_decomposition.md) – Hollywood/HK action decomposition, 1-2s cuts.
   * [`references/combat_kinematics_fx.md`](references/combat_kinematics_fx.md) – Kinetic chain, Weight transfer, Environmental FX masking.
   * [`references/combat_prompt_engineering.md`](references/combat_prompt_engineering.md) – State-transition prompting, collision workarounds, I2V staging.
-  * [`examples/action_combat_recipes.md`](examples/action_combat_recipes.md) – 3-Shot action sequences (Alley fight, Desert warrior, Gun-fu, Wall smash).
+  * [`examples/action_combat_recipes.md`](examples/action_combat_recipes.md) – 3-Shot and 4-Shot action recipes (Alley fight, Desert warrior, Gun-fu, Wall smash).
