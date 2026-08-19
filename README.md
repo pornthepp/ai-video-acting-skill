@@ -1,36 +1,36 @@
-# AI Video Acting Director Skill 🎬
+# AI Video Acting & Action Director Skill 🎬💥
 
 [![Universal Agent Compatibility](https://img.shields.io/badge/Compatibility-Claude%20Code%20%7C%20OpenAI%20Codex%20%7C%20Hermes%20%7C%20Cursor%20%7C%20Antigravity-purple.svg)](#-universal-agent-setup--integration-guide)
 [![AI Video Models](https://img.shields.io/badge/Supports-Runway%20%7C%20Kling%20%7C%20Sora%20%7C%20Hailuo%20%7C%20Luma%20%7C%20Seedance%202.5-orange.svg)](#-supported-video-ai-models)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-An advanced agentic skill designed to direct, refine, and engineer **Oscar-grade, physically realistic cinematic acting performances** in Generative AI Video models (*Runway Gen-3 / Act-One, Kling AI, OpenAI Sora, MiniMax / Hailuo, Luma Dream Machine, and ByteDance Seedance 2.5 / Jimeng*).
+An advanced agentic skill designed to direct, refine, and engineer **Oscar-grade cinematic acting performances** and **visceral, grounded action fight sequences** in Generative AI Video models (*Runway Gen-4.5 / Gen-3, Kling AI 1.5/2.0/3.0, OpenAI Sora, MiniMax / Hailuo, Luma Dream Machine, and ByteDance Seedance 2.5 / Jimeng*).
 
-Eliminates the "Uncanny Valley" and cartoonish overacting by replacing vague emotional adjectives with **Playable Action Verbs**, **FACS-based Micro-expressions**, **Gaze & Respiratory Dynamics**, and **Kinematic Prompt Grammar**.
+Eliminates the "Uncanny Valley", rubbery facial overacting, and multi-body combat morphing through **Playable Action Verbs**, **FACS-based Micro-expressions**, **Action Shot Decomposition (1 Action per Shot)**, and **Environmental FX Masking**.
 
 ---
 
-## 🎯 The Core Problem: Why AI Video Acting Looks Uncanny
-
-Most AI video prompts rely on **Result Directing**—commanding abstract emotional adjectives such as *"a heartbroken woman crying"* or *"a deeply angry detective"*. 
-
-Generative video models struggle with abstract psychological labels, leading to:
-* Exaggerated grimacing, rubbery facial morphing, and unnatural tears.
-* Unblinking, static "frozen mask" stares.
-* Overcrowded facial muscle movement without temporal breathing room (*"Micro-expression soup"*).
-
-### The Solution: Kinematic & Playable Directing
-In professional filmmaking, directors command **Playable Actions** (what the character is physically doing to someone else) and **Observable Kinematics** (subtle eyelines, jaw tension, breathing resets, and recovery).
+## 🎯 The Core Problems in AI Video & How We Solve Them
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────┐
-│                      KINEMATIC DIRECTING PIPELINE                        │
-│                                                                          │
-│  [Abstract Emotion] ──► [Playable Action Verb] ──► [Moment Before]       │
-│                                                          │               │
-│  [Camera / Lighting] ◄── [Temporal Beats] ◄── [Physical Micro-Cues]      │
-└──────────────────────────────────────────────────────────────────────────┘
+│                   AI VIDEO CINEMATIC DIRECTING ENGINE                    │
+├──────────────────────────────────────────┬───────────────────────────────┤
+│ MODE A: ACTING & DRAMATIC PERFORMANCE    │ MODE B: ACTION & COMBAT STUNT │
+│  - Replaces abstract emotion adjectives  │  - Solves multi-body collision│
+│  - Playable Action Verbs (Weston)        │  - Action Shot Decomposition  │
+│  - FACS Micro-Cues (1-2 Features Max)    │  - 1 Dominant Action per Cut  │
+│  - Temporal Beat: Hold ➔ Leak ➔ Settle   │  - Environmental FX Masking   │
+└──────────────────────────────────────────┴───────────────────────────────┘
 ```
+
+### 1. Problem 1: Uncanny Facial Overacting (Drama)
+* **Root Cause**: Generative models fail when prompted with abstract psychological labels (*"heartbroken"*, *"deeply sad"*, *"intensely angry"*).
+* **Solution**: Direct **Playable Action Verbs** (*To corner*, *To deflect*, *To conceal*, *To shield*) and **Kinematic Micro-acting** (eyeline shifts, breath catches, and jaw releases).
+
+### 2. Problem 2: Multi-Body Collision & Limb Morphing (Action)
+* **Root Cause**: AI Video models cannot render multi-limb grappling, wrist locks, or multi-beat combos in a single prompt (resulting in 3 arms, morphing bodies, and rubbery floaty physics).
+* **Solution**: The **3-Shot Action Sequence Protocol** (1 Dominant Action per Cut) + **Environmental FX Masking** (rain spray, debris explosion, sparks) to sell kinetic impact while masking contact points.
 
 ---
 
@@ -46,9 +46,13 @@ ai-video-acting-skill/
 ├── references/
 │   ├── cinematic_acting_frameworks.md       # Directing theory (Judith Weston, Stanislavski, Meisner, Beats 3s/5s/8s)
 │   ├── micro_expressions_cinematic.md       # FACS Action Units, Gaze dynamics, Respiration, Laban analysis
-│   └── cinematic_prompt_grammar.md          # Kinematic Prompt syntax, Anti-patterns, Benchmark prompts
+│   ├── cinematic_prompt_grammar.md          # Kinematic Prompt syntax, Anti-patterns, Benchmark prompts
+│   ├── action_shot_decomposition.md         # Hollywood/HK fight decomposition, 1-to-2-second cuts
+│   ├── combat_kinematics_fx.md              # Kinetic chain, Weight transfer, Environmental FX masking
+│   └── combat_prompt_engineering.md         # State-transition prompting, collision workarounds, I2V staging
 └── examples/
-    └── cinematic_prompt_recipes.md          # Ready-to-use prompt recipes across film genres
+    ├── cinematic_prompt_recipes.md          # Ready-to-use drama prompt recipes across genres
+    └── action_combat_recipes.md             # Production-ready 3-shot action prompt sequences
 ```
 
 ---
@@ -58,29 +62,19 @@ ai-video-acting-skill/
 This repository is built to work across **any AI assistant or agent framework**:
 
 ### 1. Claude Code (Anthropic)
-Simply place this repository in your workspace or copy [`CLAUDE.md`](CLAUDE.md) to your project root. Claude Code will automatically reference the director instructions when crafting prompts.
+Place this repository in your workspace or copy [`CLAUDE.md`](CLAUDE.md) to your project root. Claude Code will automatically reference both Drama and Action directives.
 
 ### 2. OpenAI Codex / ChatGPT / Custom GPTs / Assistants API
-Copy the full text inside [`SYSTEM_PROMPT.md`](SYSTEM_PROMPT.md) and paste it into:
-* **Custom GPTs**: *Instructions* box.
-* **ChatGPT**: *Custom Instructions* (`How would you like ChatGPT to respond?`).
-* **OpenAI Assistants API / Codex**: `instructions` parameter.
+Copy the full text inside [`SYSTEM_PROMPT.md`](SYSTEM_PROMPT.md) and paste it into Custom Instructions or System Prompt.
 
 ### 3. Nous Hermes & Open-Source LLMs (Ollama / vLLM / LM Studio / Open-WebUI)
-Load [`SYSTEM_PROMPT.md`](SYSTEM_PROMPT.md) as the System Message in your Ollama Modelfile or LM Studio system configuration:
-```dockerfile
-# Modelfile example for Ollama (Hermes 3 / Llama 3)
-FROM hermes3:latest
-SYSTEM """
-<Paste contents of SYSTEM_PROMPT.md here>
-"""
-```
+Load [`SYSTEM_PROMPT.md`](SYSTEM_PROMPT.md) as the System Message in your Ollama Modelfile or LM Studio system configuration.
 
 ### 4. Cursor & Windsurf IDEs
-The [`.cursorrules`](.cursorrules) file in the root directory is automatically recognized by Cursor and Windsurf, enabling immediate acting direction in chat and agent sessions.
+The [`.cursorrules`](.cursorrules) file in the root directory is automatically recognized by Cursor and Windsurf for instant prompt engineering.
 
 ### 5. Google Antigravity & Agent Skills Ecosystem
-Antigravity automatically discovers and loads [`SKILL.md`](SKILL.md) as an active tool and skill in your agent workspace.
+Antigravity automatically discovers and loads [`SKILL.md`](SKILL.md) as an active tool and skill in your workspace.
 
 ### 6. Python Agents (LangChain, CrewAI, AutoGen)
 ```python
@@ -90,39 +84,14 @@ from pathlib import Path
 system_prompt = Path("ai-video-acting-skill/SYSTEM_PROMPT.md").read_text(encoding="utf-8")
 
 # Pass to your agent (CrewAI / LangChain / AutoGen)
-# e.g., Agent(role="Video Acting Director", backstory=system_prompt)
+# e.g., Agent(role="Cinematic Action & Acting Director", backstory=system_prompt)
 ```
 
 ---
 
-## 🧠 Theoretical Foundations
+## ⚡ Master Directing Templates
 
-This skill synthesizes knowledge from 4 key disciplines:
-
-1. **Screen Acting & Directing (Hollywood / Meisner / Weston)**:
-   * **Playable Action Verbs**: Directing intentions like *To Interrogate*, *To Conceal*, *To Shield*, *To Disarm*.
-   * **The Moment Before**: Incorporating residual physical tension and pre-shot history.
-   * **Subtext & Oppositions**: Contradiction between internal pain and external suppression.
-
-2. **Micro-Expressions & Facial Anatomy (Paul Ekman's FACS)**:
-   * Translating emotion into localized **Action Units (AUs)** (e.g., lower eyelid tension, lip press, chin micro-tremor).
-   * Restricting active facial zones to 1–2 features per beat to prevent model hallucination.
-
-3. **Gaze & Respiratory Dynamics**:
-   * Saccadic shifts vs. fixations, turn-taking eyelines, and defocused stares.
-   * Inhale catches, held breath, and slow nasal exhales as internal shot pacing engines.
-
-4. **Laban Movement Analysis (LMA)**:
-   * Micro-movement effort qualities (*Weight, Space, Time, Flow*) applied to subtle cinematic gestures.
-
----
-
-## ⚡ The Kinematic Prompting Formula
-
-### Micro-Acting Hierarchy Equation
-$$\text{SPATIAL ANCHOR} \longrightarrow \text{PRIMARY ACTION} \longrightarrow \text{EYELINE} \longrightarrow \text{1–2 FACE CUES} \longrightarrow \text{BREATH} \longrightarrow \text{RECOVERY/STILLNESS}$$
-
-### Master Text-to-Video (T2V) Template
+### Mode A: Drama Master Template (T2V)
 ```text
 [Character archetype], already [visible physical precondition] at/in [spatial anchor].
 
@@ -138,48 +107,59 @@ They [swallow / blink once / release the jaw / settle the shoulders], then becom
 Restrained natural performance, low-amplitude real-time movement.
 ```
 
-### Master Image-to-Video (I2V) Template
+### Mode B: Combat Master 3-Shot Protocol (T2V / I2V)
 ```text
-The subject [single primary physical action].
-Eyes remain [initial eyeline], then [one subtle gaze shift].
-On [breath cue], [1–2 localized facial movements], followed by [jaw release / settling into stillness].
-[One camera instruction, e.g., locked camera or slow push-in].
-[Lighting interaction with micro-movement].
-```
+[SHOT 1 - TENSION/STANCE - 1.5s]
+[Framing: Tight medium 35mm], [Environment]. [Fighter A], weight planted firmly on rear foot, fists in tight high guard. Breathing heavily through clenched teeth. Eyes locked aggressively on opponent off-camera. Locked dynamic camera.
 
-### Temporal Beat Structure (3s – 8s Shots)
-$$\text{ESTABLISH / HOLD (0–1.5s)} \longrightarrow \text{MICRO-LEAK (1.5–3.5s)} \longrightarrow \text{RECOVER / SETTLE (3.5–5s)}$$
+[SHOT 2 - IMPACT/STRIKE - 1.2s]
+[Camera: Fast whip-pan / crash push-in]. Fighter A explosively drives forward, slamming [shoulder / strike] into Fighter B's [chest / guard], forcing Fighter B violently backward into [wall / floor]. [Environmental FX: Rain spray / dust / debris bursts outward on impact]. High kinetic energy, physical resistance, motion blur, 45-degree shutter.
+
+[SHOT 3 - RECOIL/AFTERMATH - 1.5s]
+[Framing: Medium close-up]. Fighter B recoils and stumbles back against [surface]. Fighter A takes half a step back, fists still raised, chest heaving with rapid breaths. Neon rim lighting, grounded realism.
+```
 
 ---
 
 ## 🛠 Supported Video AI Models
 
-| Model | Syntax Strategy | Key Directing Rules |
+| Model | Drama / Acting Strategy | Action / Combat Strategy |
 | :--- | :--- | :--- |
-| **Kling AI (1.5 / 2.0)** | `Subject + Movement + Scene + Camera + Lighting` | Direct physical actions achievable in 5 seconds; 1–2 facial cues max. |
-| **Runway (Gen-3 / Act-One)** | Positive kinematic phrasing | **NEVER** use negative commands (`no`, `don't`). Use positive anchors (`locked camera`, `mouth remains neutral`). |
+| **Kling AI (1.5 / 2.0 / 3.0)** | `Subject + Movement + Scene + Camera + Lighting` (1–2 face cues) | Separate striker from receiver; use Motion Brush for trajectory; 1 strike per 5s clip. |
+| **Runway (Gen-4.5 / Gen-3)** | Positive kinematic phrasing, no negative commands | High-speed shutter phrasing (`45-degree shutter`), environmental FX bursts, locked impacts. |
 | **OpenAI Sora** | Storyboard beats + Count | `1 Subject Action + 1 Camera Move` in sequential count beats. |
-| **MiniMax / Hailuo** | Explicit bracket tags | Use `[Static shot]` / `[Push in]` with literal kinematic phrasing. |
-| **Luma Dream Machine** | Separate subject kinematics from camera language | Natural subject movement descriptions; explicit camera movement commands. |
-| **Seedance 2.5 (ByteDance / Jimeng)** | `Subject Anchor + Kinematic Beats + Camera Trajectory + Lighting Details` | Excels at high aesthetic facial continuity and prompt adhesion. Use explicit spatial anchors, subtle gaze tracking cues, and clear camera trajectory (`slow push-in 85mm`, `locked close-up`). |
+| **MiniMax / Hailuo** | Explicit `[Static shot]` / `[Push in]` | `[Push in]` or `[Crash zoom]` with explicit momentum and debris triggers. |
+| **Seedance 2.5 (Jimeng)** | `Spatial Anchor + 3-Stage Beats + Camera Trajectory` | Timestamp-level beat structuring (0-1.5s stance, 1.5-3.5s collision, 3.5-5.0s recoil). |
+| **Luma Dream Machine** | Separate subject kinematics from camera language | Explicit camera commands (e.g., `camera whip-pans right following impact`). |
 
 ---
 
-## 🎭 Before & After Comparison
+## 🎭 Before & After Comparisons
 
+### Drama / Acting
 | ❌ Uncanny / Vague Prompt | ✅ Oscar-Grade Kinematic Rewrite |
 | :--- | :--- |
 | `A heartbroken woman crying sadly in the rain, looking devastated.` | `She holds the letter steady with both hands. Her eyes remain fixed off-camera right. On a shallow inhale, her lower eyelids tighten slightly while her lips press together. She swallows once, lets her gaze fall to the floor, and releases her jaw on the slow exhale. Locked 85mm close-up, soft window light catching lower eyelid moisture.` |
-| `A detective stares intensely with a deeply suspicious face.` | `He sits motionless behind the scarred desk. His eyes remain locked on the unseen witness off-camera left without turning his head. On a slow nasal exhale, his jaw shifts once before settling back into stillness. Tight telephoto close-up, slanted Venetian-blind lighting.` |
+
+### Action / Martial Arts
+| ❌ Broken / Floaty Combat Prompt | ✅ Grounded 3-Shot Action Sequence |
+| :--- | :--- |
+| `An athletic girl gets cornered by a thug, blocks his punch, grapples his wrist, and slams him into a brick wall with fast martial arts.` | **Shot 1 (1.5s)**: *Tight medium, rainy alley. Athletic woman backed against wet brick wall, breathing heavily through clenched teeth. Weight loaded on rear foot, fists in tight guard. Eyes lock aggressively off-camera right.*<br>**Shot 2 (1.2s)**: *Fast whip-pan. Woman drives forward explosively, slamming her shoulder into the man's chest and ramming him backward into the brick wall. Heavy rain spray bursts outward upon impact. Motion blur, 45° shutter.*<br>**Shot 3 (1.5s)**: *Medium close-up. Man recoils and slumps down the wall. Woman steps back, chest heaving with rapid breaths, fists still raised.* |
 
 ---
 
-## 📚 Deep Documentation
+## 📚 Deep Documentation & Knowledge Base
 
-* 📖 [Cinematic Acting Directing Frameworks](references/cinematic_acting_frameworks.md)
-* 🧬 [Micro-Expressions & FACS Guide](references/micro_expressions_cinematic.md)
-* 📐 [Kinematic Prompt Grammar & Benchmarks](references/cinematic_prompt_grammar.md)
-* 🎬 [Curated Cinematic Prompt Recipes](examples/cinematic_prompt_recipes.md)
+* 🎭 **Drama & Acting References**:
+  * 📖 [Cinematic Acting Directing Frameworks](references/cinematic_acting_frameworks.md)
+  * 🧬 [Micro-Expressions & FACS Guide](references/micro_expressions_cinematic.md)
+  * 📐 [Kinematic Prompt Grammar & Benchmarks](references/cinematic_prompt_grammar.md)
+  * 🎬 [Curated Drama Prompt Recipes](examples/cinematic_prompt_recipes.md)
+* 💥 **Action & Combat References**:
+  * 🥋 [Action Shot Decomposition Framework](references/action_shot_decomposition.md)
+  * ⚡ [Combat Kinematics & Environmental FX Masking](references/combat_kinematics_fx.md)
+  * 🛠 [Combat Prompt Engineering & I2V Pipelines](references/combat_prompt_engineering.md)
+  * 🥊 [Curated 3-Shot Action Combat Recipes](examples/action_combat_recipes.md)
 
 ---
 

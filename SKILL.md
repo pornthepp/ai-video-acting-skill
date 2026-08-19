@@ -1,80 +1,41 @@
 ---
 name: ai-video-acting-director
-description: Directs, designs, and refines highly realistic, subtle cinematic acting performances for AI Video models (Runway, Kling, Sora, Hailuo/MiniMax, Luma, Seedance 2.5). Uses Playable Action Verbs (Judith Weston), Subtext/Beats (Stanislavski/Meisner), Micro-expressions (FACS/Laban), and Kinematic Prompt Syntax to eliminate uncanny/exaggerated acting.
+description: Directs, designs, and refines highly realistic, subtle cinematic acting performances and Hollywood/HK-grade action fight sequences for AI Video models (Runway, Kling, Sora, Hailuo/MiniMax, Luma, Seedance 2.5). Uses Playable Action Verbs (Judith Weston), Subtext/Beats, Micro-expressions (FACS/Laban), Action Shot Decomposition (1 Action per Shot), Kinetic Body Mechanics, and Environmental FX Masking to eliminate uncanny acting and multi-body combat morphing.
 ---
 
-# AI Video Acting Director Skill
+# AI Video Acting & Action Director Skill 🎬💥
 
-This skill transforms abstract, emotional video prompts into **physically playable, Oscar-level cinematic performances** optimized for AI generative video models.
+This skill transforms abstract video prompts into **physically playable, Oscar-grade cinematic drama performances** and **visceral, grounded action fight sequences** optimized for AI generative video models.
 
 ---
 
-## 1. Core Directing Philosophy
-
-### ❌ Never Use "Result Directing"
-Generic adjectives (e.g., *heartbroken, deeply angry, terrified, intensely emotional, crying sadly*) cause video AI models to produce exaggerated grimaces, rubbery faces, or static frozen masks.
-
-### ✅ Use "Kinematic & Playable Directing"
-Direct the **physical action the character does to someone else**, their **internal conflict (Subtext)**, and **observable micro-movements** (eyeline, breath, jaw tension, recovery).
+## 1. Dual Directing Modes
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────┐
-│                          KINEMATIC DIRECTING PIPELINE                    │
-│                                                                          │
-│  [Abstract Emotion] ──► [Playable Action Verb] ──► [Moment Before]       │
-│                                                          │               │
-│  [Camera / Lighting] ◄── [Temporal Beats] ◄── [Physical Micro-Cues]      │
-└──────────────────────────────────────────────────────────────────────────┘
+│                   AI VIDEO CINEMATIC DIRECTING ENGINE                    │
+├──────────────────────────────────────────┬───────────────────────────────┤
+│ MODE A: ACTING & DRAMATIC PERFORMANCE    │ MODE B: ACTION & COMBAT STUNT │
+│  - Playable Action Verbs (Weston)        │  - Action Shot Decomposition  │
+│  - The Moment Before & Subtext           │  - 1 Action per Shot Rule     │
+│  - FACS Micro-Cues (1-2 Features Max)    │  - Kinetic Chain & Resistance │
+│  - Temporal Beat: Hold ➔ Leak ➔ Settle   │  - Environmental FX Masking   │
+└──────────────────────────────────────────┴───────────────────────────────┘
 ```
 
 ---
 
-## 2. The 5-Step Director Workflow
+## 2. Mode A: Cinematic Acting & Dramatic Performance
 
-When converting or drafting an acting prompt:
+### Core Philosophy
+* ❌ **Never use Result Directing**: Avoid adjectives like *heartbroken, deeply angry, terrified, sad*.
+* ✅ **Use Playable Verbs**: Direct what the character is physically doing to someone else (*To corner, To deflect, To conceal, To shield, To hold them here, To swallow defeat*).
+* ✅ **Micro-Acting Hierarchy**:
+  $$\text{SPATIAL ANCHOR} \longrightarrow \text{PRIMARY ACTION} \longrightarrow \text{EYELINE} \longrightarrow \text{1–2 FACE CUES} \longrightarrow \text{BREATH} \longrightarrow \text{RECOVERY/STILLNESS}$$
 
-### Step 1: Define the Playable Action Verb (What is the character doing?)
-Instead of naming an emotion, pick an active intention targeting another person or obstacle:
-* *Instead of "Sad"* ➔ **To hold them here** / **To protect them from my pain** / **To swallow defeat**
-* *Instead of "Angry"* ➔ **To interrogate** / **To corner** / **To punish with silence**
-* *Instead of "Guilty / Suspicious"* ➔ **To conceal** / **To deflect** / **To search for a mistake**
-* *Instead of "Seductive / In love"* ➔ **To tempt across the line** / **To disarm**
-
-*(See full taxonomy in [cinematic_acting_frameworks.md](file:///d:/GitHub/Skills/ai-video-acting-skill/references/cinematic_acting_frameworks.md))*
-
-### Step 2: Establish the "Moment Before" & Spatial Anchor
-Actors never start from zero. Establish:
-* What just happened 10 seconds ago? (Residual physical tension).
-* Where are they anchored? (Seated, leaning, holding an object, facing off-camera).
-
-### Step 3: Select 1–2 Localized Micro-Cues (Avoid "Micro-expression Soup")
-Do not animate every muscle. Pick **maximum 1 or 2 focal points**:
-1. **Eyeline (Primary)**: Off-camera target, gaze hold, deliberate shift, blink cadence.
-2. **Mouth / Jaw**: Lower eyelid tightening, jaw shift, lips pressing together, swallowing.
-3. **Respiration**: Breath catch, shallow nasal inhale, held breath, slow exhale through parted lips.
-4. **Hands / Prop**: Finger freeze, thumb tap, grip tightening, settling.
-
-*(See anatomical breakdown in [micro_expressions_cinematic.md](file:///d:/GitHub/Skills/ai-video-acting-skill/references/micro_expressions_cinematic.md))*
-
-### Step 4: Structure the Temporal Beat (3s to 8s Shots)
-The natural rhythm of human emotional suppression follows:
-$$\text{HOLD / ESTABLISH} \longrightarrow \text{LEAK / IMPULSE} \longrightarrow \text{RECOVER / SETTLE}$$
-
-* **0.0 – 1.5s (Establish)**: Stillness + stable eyeline + anchored posture.
-* **1.5 – 3.5s (Leak)**: Micro-action + localized facial cue + breath change.
-* **3.5 – 5.0s (Recover)**: Eyeline shift or swallow + jaw release + settling into stillness.
-
-### Step 5: Format for the Specific Target Video Model
-Apply platform-specific keywords and syntax (see Section 4).
-
----
-
-## 3. Master Prompt Templates
-
-### A. Text-to-Video (T2V) Master Template
-
+### Drama Master Template (T2V)
 ```text
-[Character archetype], already [visible physical precondition / state] at/in [spatial anchor].
+[Character archetype], already [visible physical precondition] at/in [spatial anchor].
 
 [Primary physical action in one or two beats].
 Their eyes remain [precise eyeline target], then [one deliberate eyeline change].
@@ -88,46 +49,70 @@ They [swallow / blink once / release the jaw / settle the shoulders], then becom
 Restrained natural performance, low-amplitude real-time movement.
 ```
 
-### B. Image-to-Video (I2V) Master Template
-*(Note: Keep short. The first frame already defines lighting, costume, and composition).*
+---
 
+## 3. Mode B: Cinematic Action & Combat Choreography
+
+### The Multi-Body Collision Bottleneck
+Current AI Video models **fail when trying to render multi-limb grappling, wrist locks, or multi-beat combos in a single prompt** (resulting in 3 arms, morphing bodies, and rubbery floaty physics).
+
+### The Golden Action Rules
+1. **The "One Dominant Action Per Shot" Rule**: Never prompt a full combo in one prompt. Break fights into **1-to-2-second discrete cuts**.
+2. **The 3-Shot Action Sequence Protocol**:
+   * **Cut 1 (Setup & Tension / 1.5s)**: Base stance, foot planting, ragged breath, intense eyeline lock. *(Uses Mode A Acting Skill)*
+   * **Cut 2 (Strike & Collision / 1.0–1.2s)**: Single explosive kinetic drive, shoulder/fist impact, momentum transfer.
+   * **Cut 3 (Reaction & Recoil / 1.5–2.0s)**: Body recoil, stumbling against surface, settling into new guard.
+3. **Environmental FX Masking**:
+   * Use high-energy environmental reactions (**water spray, rain burst, dust explosion, shattering glass, muzzle smoke, sparks**) at the exact moment of collision to sell immense kinetic power and mask AI limb entanglement.
+4. **Camera Energy as Impact**:
+   * Use **whip pans, crash zooms, high-speed shutter looks (45°/90°), and tracking momentum** instead of static wide shots.
+
+### Combat Master 3-Shot Protocol Template
 ```text
-The subject [single primary physical action].
-Eyes remain [initial eyeline], then [one subtle gaze shift].
-On [breath cue], [1–2 localized facial movements], followed by [jaw release / settling into stillness].
-[One camera instruction, e.g., locked camera or slow push-in].
-[Lighting interaction with micro-movement].
+[SHOT 1 - TENSION/STANCE - 1.5s]
+[Framing: Tight medium 35mm], [Environment]. [Fighter A description], weight planted firmly on rear foot, fists in tight high guard. Breathing heavily through clenched teeth. Eyes locked aggressively on opponent off-camera. Locked dynamic camera.
+
+[SHOT 2 - IMPACT/STRIKE - 1.2s]
+[Camera: Fast whip-pan / crash push-in]. Fighter A explosively drives forward, slamming [shoulder / strike] into Fighter B's [chest / guard], forcing Fighter B violently backward into [wall / floor]. [Environmental FX: Rain spray / dust / debris bursts outward on impact]. High kinetic energy, physical resistance, motion blur.
+
+[SHOT 3 - RECOIL/AFTERMATH - 1.5s]
+[Framing: Medium close-up]. Fighter B recoils and stumbles back against [surface]. Fighter A takes half a step back, fists still raised, chest heaving with rapid breaths. Neon/rim lighting, grounded realism.
 ```
 
 ---
 
 ## 4. Platform-Specific Adapters
 
-| Model | Syntax Strategy | Key Instructions |
+| Model | Drama / Acting Syntax | Action / Combat Syntax |
 | :--- | :--- | :--- |
-| **Kling AI (1.5 / 2.0)** | `Subject + Movement + Scene + Camera + Lighting + Atmosphere` | Use 1–2 face cues. Direct physical actions achievable in 5 seconds. Use Motion Brush / Reference Video for maximum fidelity. |
-| **Runway (Gen-3 / Act-One)** | Positive physical phrasing only | **NEVER** use negative commands (`no`, `don't`). Use positive anchors (`locked camera`, `mouth remains neutral`, `shoulders remain still`). |
-| **OpenAI Sora** | Storyboard-like beats + Count | `1 Subject Action + 1 Camera Move`. Specify actions in sequential bullet beats. |
-| **MiniMax / Hailuo** | Explicit bracket tags | Use `[Static shot]` or `[Push in]`. Set `prompt_optimizer=false` via API to preserve precise kinematic phrasing. |
-| **Luma Dream Machine** | Separate subject kinematics from camera language | Natural kinematic descriptions for subject; direct camera commands (e.g., `camera slowly pushes in`). |
-| **Seedance 2.5 (ByteDance / Jimeng)** | `Subject Anchor + Kinematic Beats + Camera Trajectory + Lighting Details` | Excels at high aesthetic facial continuity and prompt adhesion. Use explicit spatial anchors, subtle gaze tracking cues, and clear camera trajectory (`slow push-in 85mm`, `locked close-up`). |
+| **Kling AI (1.5 / 2.0 / 3.0)** | `Subject + Movement + Scene + Camera + Lighting` (1–2 face cues) | Separate striker from receiver; use Motion Brush for trajectory; 1 strike per 5s clip. |
+| **Runway (Gen-4.5 / Gen-3)** | Positive kinematic phrasing, no negative commands | High-speed shutter phrasing (`45-degree shutter`), environmental FX bursts, locked impacts. |
+| **OpenAI Sora** | Storyboard beats + Count | `1 Subject Action + 1 Camera Move` in sequential count beats. |
+| **MiniMax / Hailuo** | Explicit `[Static shot]` / `[Push in]` | `[Push in]` or `[Crash zoom]` with explicit momentum and debris triggers. |
+| **Seedance 2.5 (Jimeng)** | `Spatial Anchor + 3-Stage Beats + Camera Trajectory` | Timestamp-level beat structuring (0-1.5s stance, 1.5-3.5s collision, 3.5-5.0s recoil). |
+| **Luma Dream Machine** | Separate subject kinematics from camera language | Explicit camera commands (e.g., `camera whip-pans right following impact`). |
 
 ---
 
 ## 5. Anti-Patterns & Rewrite Rules
 
-| ❌ Uncanny / Vague Prompt | ⚠️ Problem | ✅ Oscar-Level Kinematic Rewrite |
+| ❌ Broken / Floaty Prompt | ⚠️ Why it Fails in AI | ✅ Grounded Production Rewrite |
 | :--- | :--- | :--- |
-| `She looks deeply heartbroken and cries sadly.` | Abstract emotion label triggers cartoonish grimacing. | `Her eyes stay fixed on the letter. Her lower eyelids tighten as she takes a shallow breath. She swallows once, gaze drops to the floor, and her jaw slowly releases.` |
-| `A detective stares intensely with a suspicious face.` | Causes frozen, unblinking glare. | `He sits motionless behind the scarred desk. His eyes remain locked off-camera right without turning his head. On a slow nasal exhale, his jaw shifts once, then settles.` |
-| `She smiles with hidden pain and bittersweet feeling.` | Confusing contradictory emotions for AI. | `One corner of her mouth begins to lift, then stops before becoming a full smile. She blinks once, exhales softly through parted lips, and lets her gaze fall away.` |
-| `Don't overact, no smiling, don't move camera.` | Negative prompting fails on modern video models. | `Locked 85mm close-up. Mouth stays neutral. Brows remain quiet. Subtle movement carried only by lower eyelids and a single swallow.` |
+| `Two martial artists fight fiercely, blocking punches, grappling wrists, and throwing each other.` | Multi-body collision fails; causes 3 arms, morphing, and rubbery floating bodies. | **Break into 3 discrete cuts:** (1) Stance & eyeline lock $\rightarrow$ (2) Explosive shoulder drive + rain spray $\rightarrow$ (3) Recoil into wall. |
+| `He throws a super powerful knockout punch.` | Abstract adjective; no kinetic chain or weight transfer. | `He plants his lead foot, rotates his hips and torso, and drives a compact right cross into the opponent's chest; the opponent recoils two steps.` |
+| `She looks heartbroken and cries desperately.` | Abstract emotion; triggers cartoonish facial grimacing. | `Her eyes stay on the letter. Lower eyelids tighten as breath catches. She swallows once, gaze drops, jaw slowly releases.` |
 
 ---
 
 ## 6. Reference Files Directory
 
-For deep theory and specific databases, consult:
-1. [`references/cinematic_acting_frameworks.md`](file:///d:/GitHub/Skills/ai-video-acting-skill/references/cinematic_acting_frameworks.md) – Directing theory (Weston, Stanislavski, Meisner, Shurtleff), Playable Action Verbs, Moment Before, Subtext & Opposition.
-2. [`references/micro_expressions_cinematic.md`](file:///d:/GitHub/Skills/ai-video-acting-skill/references/micro_expressions_cinematic.md) – Scientific FACS mapping (AUs), Gaze dynamics (Saccades vs. Fixation), Respiratory engine, and Laban Movement Qualities for micro-gestures.
-3. [`references/cinematic_prompt_grammar.md`](file:///d:/GitHub/Skills/ai-video-acting-skill/references/cinematic_prompt_grammar.md) – AI Video model prompt engineering, 10 Genre benchmark prompts (Noir, Thriller, Period, Cyberpunk, Sci-Fi), and platform grammar rules.
+* 🎭 **Acting & Drama**:
+  * [`references/cinematic_acting_frameworks.md`](references/cinematic_acting_frameworks.md) – Judith Weston verbs, Stanislavski, Meisner, Beats.
+  * [`references/micro_expressions_cinematic.md`](references/micro_expressions_cinematic.md) – FACS Action Units, Gaze dynamics, Respiration.
+  * [`references/cinematic_prompt_grammar.md`](references/cinematic_prompt_grammar.md) – Kinematic prompt grammar & benchmark prompts.
+  * [`examples/cinematic_prompt_recipes.md`](examples/cinematic_prompt_recipes.md) – Drama prompt recipes.
+* 💥 **Action & Stunt**:
+  * [`references/action_shot_decomposition.md`](references/action_shot_decomposition.md) – Hollywood/HK action decomposition, 1-2s cuts.
+  * [`references/combat_kinematics_fx.md`](references/combat_kinematics_fx.md) – Kinetic chain, Weight transfer, Environmental FX masking.
+  * [`references/combat_prompt_engineering.md`](references/combat_prompt_engineering.md) – State-transition prompting, collision workarounds, I2V staging.
+  * [`examples/action_combat_recipes.md`](examples/action_combat_recipes.md) – 3-Shot action sequences (Alley fight, Gun-fu, Swords, Wall smash).
