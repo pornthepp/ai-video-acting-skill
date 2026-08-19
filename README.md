@@ -1,8 +1,8 @@
 # AI Video Acting Director Skill 🎬
 
-[![Antigravity Skill](https://img.shields.io/badge/Antigravity-Skill-blue.svg)](https://github.com/pornthepp/ai-video-acting-skill)
+[![Universal Agent Compatibility](https://img.shields.io/badge/Compatibility-Claude%20Code%20%7C%20OpenAI%20Codex%20%7C%20Hermes%20%7C%20Cursor%20%7C%20Antigravity-purple.svg)](#-universal-agent-setup--integration-guide)
+[![AI Video Models](https://img.shields.io/badge/Supports-Runway%20%7C%20Kling%20%7C%20Sora%20%7C%20Hailuo%20%7C%20Luma%20%7C%20Seedance%202.5-orange.svg)](#-supported-video-ai-models)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![AI Video Models](https://img.shields.io/badge/Supports-Runway%20%7C%20Kling%20%7C%20Sora%20%7C%20Hailuo%20%7C%20Luma%20%7C%20Seedance%202.5-orange.svg)](#supported-video-ai-models)
 
 An advanced agentic skill designed to direct, refine, and engineer **Oscar-grade, physically realistic cinematic acting performances** in Generative AI Video models (*Runway Gen-3 / Act-One, Kling AI, OpenAI Sora, MiniMax / Hailuo, Luma Dream Machine, and ByteDance Seedance 2.5 / Jimeng*).
 
@@ -38,14 +38,59 @@ In professional filmmaking, directors command **Playable Actions** (what the cha
 
 ```text
 ai-video-acting-skill/
-├── SKILL.md                                 # Main agent skill instructions, templates & model adapters
-├── README.md                                # English documentation & overview
+├── SKILL.md                                 # Core agent skill instructions (Antigravity & Agentic Skills)
+├── SYSTEM_PROMPT.md                         # Universal System Prompt (Codex, ChatGPT, Hermes, LangChain)
+├── CLAUDE.md                                # Dedicated configuration for Claude Code & Anthropic
+├── .cursorrules                             # Directing rules for Cursor & Windsurf IDEs
+├── README.md                                # English documentation & integration guide
 ├── references/
 │   ├── cinematic_acting_frameworks.md       # Directing theory (Judith Weston, Stanislavski, Meisner, Beats 3s/5s/8s)
 │   ├── micro_expressions_cinematic.md       # FACS Action Units, Gaze dynamics, Respiration, Laban analysis
 │   └── cinematic_prompt_grammar.md          # Kinematic Prompt syntax, Anti-patterns, Benchmark prompts
 └── examples/
     └── cinematic_prompt_recipes.md          # Ready-to-use prompt recipes across film genres
+```
+
+---
+
+## 🌐 Universal Agent Setup & Integration Guide
+
+This repository is built to work across **any AI assistant or agent framework**:
+
+### 1. Claude Code (Anthropic)
+Simply place this repository in your workspace or copy [`CLAUDE.md`](CLAUDE.md) to your project root. Claude Code will automatically reference the director instructions when crafting prompts.
+
+### 2. OpenAI Codex / ChatGPT / Custom GPTs / Assistants API
+Copy the full text inside [`SYSTEM_PROMPT.md`](SYSTEM_PROMPT.md) and paste it into:
+* **Custom GPTs**: *Instructions* box.
+* **ChatGPT**: *Custom Instructions* (`How would you like ChatGPT to respond?`).
+* **OpenAI Assistants API / Codex**: `instructions` parameter.
+
+### 3. Nous Hermes & Open-Source LLMs (Ollama / vLLM / LM Studio / Open-WebUI)
+Load [`SYSTEM_PROMPT.md`](SYSTEM_PROMPT.md) as the System Message in your Ollama Modelfile or LM Studio system configuration:
+```dockerfile
+# Modelfile example for Ollama (Hermes 3 / Llama 3)
+FROM hermes3:latest
+SYSTEM """
+<Paste contents of SYSTEM_PROMPT.md here>
+"""
+```
+
+### 4. Cursor & Windsurf IDEs
+The [`.cursorrules`](.cursorrules) file in the root directory is automatically recognized by Cursor and Windsurf, enabling immediate acting direction in chat and agent sessions.
+
+### 5. Google Antigravity & Agent Skills Ecosystem
+Antigravity automatically discovers and loads [`SKILL.md`](SKILL.md) as an active tool and skill in your agent workspace.
+
+### 6. Python Agents (LangChain, CrewAI, AutoGen)
+```python
+from pathlib import Path
+
+# Load Universal System Prompt
+system_prompt = Path("ai-video-acting-skill/SYSTEM_PROMPT.md").read_text(encoding="utf-8")
+
+# Pass to your agent (CrewAI / LangChain / AutoGen)
+# e.g., Agent(role="Video Acting Director", backstory=system_prompt)
 ```
 
 ---
@@ -126,17 +171,6 @@ $$\text{ESTABLISH / HOLD (0–1.5s)} \longrightarrow \text{MICRO-LEAK (1.5–3.5
 | :--- | :--- |
 | `A heartbroken woman crying sadly in the rain, looking devastated.` | `She holds the letter steady with both hands. Her eyes remain fixed off-camera right. On a shallow inhale, her lower eyelids tighten slightly while her lips press together. She swallows once, lets her gaze fall to the floor, and releases her jaw on the slow exhale. Locked 85mm close-up, soft window light catching lower eyelid moisture.` |
 | `A detective stares intensely with a deeply suspicious face.` | `He sits motionless behind the scarred desk. His eyes remain locked on the unseen witness off-camera left without turning his head. On a slow nasal exhale, his jaw shifts once before settling back into stillness. Tight telephoto close-up, slanted Venetian-blind lighting.` |
-
----
-
-## 🚀 Getting Started
-
-### Using in Antigravity or AI Agents
-1. Clone or copy this repository into your skills directory:
-   ```bash
-   git clone https://github.com/pornthepp/ai-video-acting-skill.git
-   ```
-2. The agent will read [`SKILL.md`](SKILL.md) and automatically apply the 5-step directing workflow, reference databases, and model adapters whenever video prompts or scene directions are requested.
 
 ---
 
